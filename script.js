@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "top_speed": "348 km/h",
             "acceleration_0_100": "3.0 seconds",
             "price": "$500,000",
-            "image_url": "Assests/ford-GT.jpg"
+            "image_url": "Assests/Ford-GT.jpg"
         },
         {
             "make": "Chevrolet",
