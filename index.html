@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteExotics</title>
+
+    <!-- all embedded links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">Elite Exotics</a>
+        </div>
+
+        <nav>
+            <ul class="ul">
+                <li><a href="#home" class="home">Home</a></li>
+                <li><a href="#about" class="About">About</a></li>
+                <li><a href="#cars" class="cars">Cars</a></li>
+                <li><a href="#contact" class="contact">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-opn-btn" onclick="toggleMenu()">
+                <img src="menu.svg" alt="menu-btn">
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-placeholder"></div>
+
+
+    <!-- Home Section Starts -->
+
+    <section id="home">
+        <div class="welcome">
+            <h1>Welcome to EliteExotics</h1>
+            <p>Experience the thrill of luxury supercars like never before.</p>
+        </div>
+
+        <div class="featured">
+            <h2>Featured Supercars</h2>
+            <div class="supercar">
+                <img src="Assests/lam-aventador.jpg" alt="Supercar 1">
+                <h3>Lamborghini Aventador SVJ</h3>
+                <p>The epitome of performance and style, the Aventador SVJ is a masterpiece of engineering.</p>
+            </div>
+            <div class="supercar">
+                <img src="Assests/ferrari488-pista.jpg" alt="Supercar 2">
+                <h3>Ferrari 488 Pista</h3>
+                <p>Unleash the raw power and precision of the 488 Pista, a true marvel of Italian craftsmanship.</p>
+            </div>
+        </div>
+
+
+
+        <div class="unique-selling-points">
+            <h2>Why Choose EliteExotics?</h2>
+            <ul>
+                <li>Unparalleled Performance</li>
+                <li>Luxurious Comfort</li>
+                <li>Exquisite Design</li>
+                <li>Exclusive Ownership Experience</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <p>Ready to elevate your driving experience?</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Home Section Ends -->
+
+
+    <!-- About Section Starts -->
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <h1>About EliteExotics</h1>
+                <p>Welcome to EliteExotics, where luxury meets performance. We are dedicated to providing the ultimate
+                    driving experience through our exclusive collection of high-performance supercars. Our commitment to
+                    excellence ensures that every car we offer is a masterpiece of engineering and design.</p>
+
+                <h2>Our Story</h2>
+                <p>Established in 2010, EliteExotics has grown from a small passion project into a premier destination
+                    for luxury supercars. Our journey began with a simple goal: to share our love for exotic cars with
+                    enthusiasts around the world. Today, we are proud to offer a curated selection of the finest
+                    vehicles, each chosen for its exceptional quality and performance.</p>
+
+                <h2>Our Mission</h2>
+                <p>Our mission is to redefine luxury and performance in the automotive world. We strive to provide our
+                    customers with an unmatched selection of supercars, combined with personalized service that exceeds
+                    expectations. At EliteExotics, we believe that driving a luxury car should be an unforgettable
+                    experience, and we are here to make that dream a reality.</p>
+
+                <h2>Core Values</h2>
+                <ul>
+                    <li><strong>Excellence:</strong> We maintain the highest standards in everything we do, from our
+                        vehicle selection to customer service.</li>
+                    <li><strong>Passion:</strong> Our love for luxury cars drives our commitment to providing the best
+                        products and services.</li>
+                    <li><strong>Integrity:</strong> We operate with transparency and honesty, building trust with every
+                        customer interaction.</li>
+                    <li><strong>Customer Focus:</strong> Our customers are at the heart of our business, and we strive
+                        to exceed their expectations at every turn.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Ends -->
+
+
+    <!-- Cars Section Starts -->
+
+    <section id="cars">
+        <h2>Exclusive Lineup</h2>
+        <div class="cars-cont"></div>
+        <button id="show-more-btn" class="btn">Show More Cars</button>
+    </section>
+
+    <!-- Car Modal -->
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-car-image" alt="Car Image">
+            <h2 id="modal-car-name"></h2>
+            <p id="modal-car-description"></p>
+            <div id="modal-car-details"></div>
+            <div class="btns">
+                <button id="book-test-drive" class="btn">Book Test Drive</button>
+                <button id="purchase-car" class="btn">Purchase</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div id="form-modal">
+        <div class="form-modal-content">
+            <button class="close-btn">&times;</button>
+            <h3 id="form-title"></h3>
+            <form id="user-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="eg. John Doe" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="eg. johndoe@gmail.com" required>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cars Section Ends -->
+
+    <!-- Contact Us Section Starts -->
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Us Section Ends -->
+
+
+    <!-- Footer Starts -->
+
+    <footer>
+        <div class="logo">
+            <a href="#home">Elite Exotics</a>
+        </div>
+        <div class="copyright">
+            <p>&copy 2010 Elite Exotics</p>
+        </div>
+        <div class="social-links">
+            <div class="facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+            </div>
+            <div class="instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </div>
+            <div class="twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+            </div>
+        </div>
+    </footer>
+
+    <h2 class="imp-msg">Made by Vansh</h2>
+
+    <!-- Footer Ends -->
+
+
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
