@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "top_speed": "350 km/h",
             "acceleration_0_100": "2.4 seconds",
             "price": "$1,420,000",
-            "image_url": "Assests/laferrari.jpg"
+            "image_url": "Assests/laFerrari.jpg"
         },
         {
             "make": "Ferrari",
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "top_speed": "340 km/h",
             "acceleration_0_100": "2.5 seconds",
             "price": "$625,000",
-            "image_url": "Assests/ferrari-sf90.jpg"
+            "image_url": "Assests/ferrari-SF90.jpg"
         },
         {
             "make": "Lamborghini",
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "top_speed": "348 km/h",
             "acceleration_0_100": "3.0 seconds",
             "price": "$500,000",
-            "image_url": "Assests/ford-gt.jpg"
+            "image_url": "Assests/ford-GT.jpg"
         },
         {
             "make": "Chevrolet",
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "top_speed": "455 km/h",
             "acceleration_0_100": "2.5 seconds",
             "price": "$1,625,000",
-            "image_url": "Assests/ssc-tuatara.jpg"
+            "image_url": "Assests/SSC-Tuatara.jpg"
         }
     ];
 
