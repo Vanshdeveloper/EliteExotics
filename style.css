@@ -692,18 +692,7 @@ footer .social-links svg:hover {
     background-color: var(--gold);
     box-shadow: 0 0 10px #FFC300;
     border-radius: 50%;
-}
-
-.imp-msg {
-    padding: 30px;
-    background: #000000;
-    color: var(--gold);
-    text-align: center;
-    font-family: var(--fontgv);
-    font-weight: 400;
-    font-size: 30px;
-    word-spacing: 8px;
-}
+}
 
 /* Reponsive Design */
 
